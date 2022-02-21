@@ -1,0 +1,33 @@
+{
+  "name": "La Quoc Thang",
+  "description": "Thời khóa biểu của La Quốc Thắng",
+  "version": "1.0",
+  "action": {
+    "default_icon": {
+      "16": "/logo/logo-16.png",
+      "32": "/logo/logo-32.png",
+      "48": "/logo/logo-48.png",
+      "128": "/logo/logo-100.png"
+    },
+    "default_popup": "popup.html"
+  },
+  "icons": {
+    "16": "/logo/logo-16.png",
+    "32": "/logo/logo-32.png",
+    "48": "/logo/logo-48.png",
+    "128": "/logo/logo-100.png"
+  },
+  "permissions": [
+    "scripting"
+  ],
+  "manifest_version": 3,
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self';"
+  },
+  "host_permissions": [
+    "http://online.dlu.edu.vn/"
+  ],
+  "background": {
+    "service_worker": "lib/background.js"
+  }
+}
